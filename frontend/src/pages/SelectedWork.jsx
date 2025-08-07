@@ -7,12 +7,12 @@ const SelectedWork = () => {
   const projects = [
     {
       id: 1,
-      artist: "Luna Eclipse",
-      album: "Midnight Reveries",
-      year: "2024",
+      artist: "Apex Anima",
+      album: "Elf F O",
+      year: "2023",
       genre: "Electronic",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&crop=entropy&auto=format&fm=jpg&q=60",
-      description: "A haunting electronic masterpiece with ethereal vocals"
+      image: "/assets/a1215708399_65.jpeg",
+        description: "Apex Anima is the musical solo project of Icelandic artist Unnur Andrea, who won the Kraumur Music Award in 2023. Their debut album, \"Elf F O,\" was also named album of the year. Credits: Mix and mastering."
     },
     {
       id: 2,
