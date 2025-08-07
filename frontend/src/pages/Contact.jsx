@@ -49,7 +49,7 @@ const Contact = () => {
       
       toast({
         title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
+        description: "I'll get back to you within 24 hours.",
       });
       
       // Reset form
@@ -62,7 +62,7 @@ const Contact = () => {
     } catch (error) {
       toast({
         title: "Error sending message",
-        description: "Please try again later or email us directly.",
+        description: "Please try again later or email me directly.",
         variant: "destructive"
       });
     } finally {
@@ -74,17 +74,17 @@ const Contact = () => {
     {
       title: "Email",
       content: "hello@hesseldahlsound.com",
-      description: "Send us an email anytime"
+      description: "Send me an email anytime"
     },
     {
       title: "Response Time",
       content: "Within 24 hours",
-      description: "We'll get back to you quickly"
+      description: "I'll get back to you quickly"
     },
     {
       title: "Free Consultation",
       content: "Available",
-      description: "Discuss your project with us"
+      description: "Discuss your project with me"
     }
   ];
 
@@ -105,7 +105,7 @@ const Contact = () => {
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to start your next project? We'd love to hear from you and discuss how we can help bring your music to life.
+            Ready to start your next project? I'd love to hear from you and discuss how I can help bring your music to life.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ const Contact = () => {
               <CardHeader className="relative">
                 <CardTitle className="text-2xl text-white flex items-center gap-2 tracking-wide">
                   <div className="w-2 h-2 bg-cyan-300 rounded-full"></div>
-                  SEND US A MESSAGE
+                  SEND ME A MESSAGE
                 </CardTitle>
               </CardHeader>
               <CardContent className="relative">
@@ -190,7 +190,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       rows={6}
                       className="bg-gray-800/30 border-cyan-300/20 text-white placeholder-gray-400 focus:border-cyan-300 focus:ring-cyan-300/20 resize-none"
-                      placeholder="Tell us about your project, timeline, and any specific requirements..."
+                      placeholder="Tell me about your project, timeline, and any specific requirements..."
                     />
                   </div>
 

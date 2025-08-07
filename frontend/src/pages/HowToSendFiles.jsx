@@ -40,7 +40,7 @@ const HowToSendFiles = () => {
     {
       step: 4,
       title: "SEND VIA CONTACT FORM",
-      description: "Use our contact form to send the download link along with all project details. We'll confirm receipt within 24 hours.",
+      description: "Use my contact form to send the download link along with all project details. I'll confirm receipt within 24 hours.",
       details: [
         "Fill out the contact form",
         "Include cloud storage link",
@@ -174,7 +174,7 @@ const HowToSendFiles = () => {
                 READY TO GET STARTED?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Have your files ready? Send them our way and let's create something amazing together.
+                Have your files ready? Send them my way and let's create something amazing together.
               </p>
               <a href="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">

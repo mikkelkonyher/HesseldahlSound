@@ -2,25 +2,6 @@ import React from 'react';
 import { Card, CardContent } from '../components/ui/card';
 
 const About = () => {
-  const stats = [
-    {
-      number: "500+",
-      label: "Projects Completed"
-    },
-    {
-      number: "200+",
-      label: "Happy Artists"
-    },
-    {
-      number: "10+",
-      label: "Years Experience"
-    },
-    {
-      number: "24/7",
-      label: "Dedicated Service"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gray-950 pt-24 pb-16 relative overflow-hidden">
       {/* Futuristic background effects */}
@@ -34,7 +15,7 @@ const About = () => {
           <div className="relative inline-block">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-xl blur-lg opacity-50"></div>
             <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide">
-              ABOUT HESSELDAHL SOUND
+              ABOUT MIKKEL HESSELDAHL KONYHER
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -48,22 +29,16 @@ const About = () => {
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-xl blur-lg opacity-30"></div>
             <div className="relative bg-gray-900/20 p-8 rounded-xl border border-cyan-300/10 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">OUR STORY</h2>
+              <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">MY STORY</h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  My passion for audio engineering began years ago when I first discovered the transformative power of professional mixing and mastering. What started as curiosity evolved into a dedicated craft, where I've honed my skills to deliver exceptional sonic experiences for artists across genres.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  Working from my professionally treated studio, I focus on bringing out the unique character and emotion in every track I work with. My approach combines technical precision with creative intuition, ensuring that each project receives the individual attention it deserves.
                 </p>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                  architecto beatae vitae dicta sunt explicabo.
+                  I believe that great audio production is not just about technical perfection—it's about understanding the artist's vision and translating that into a sound that connects with listeners on a deeper level.
                 </p>
               </div>
             </div>
@@ -73,54 +48,19 @@ const About = () => {
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-xl blur-lg opacity-30"></div>
             <div className="relative bg-gray-900/20 p-8 rounded-xl border border-cyan-300/10 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">OUR PHILOSOPHY</h2>
+              <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">MY PHILOSOPHY</h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                  consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                  quisquam est, qui dolorem ipsum quia dolor sit amet.
+                  Every project that comes through my studio doors is treated with the same level of dedication and care. I understand that your music represents countless hours of creativity and emotion, and I'm committed to honoring that investment with professional results.
                 </p>
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
-                  voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
-                  occaecati cupiditate non provident.
+                  My process is collaborative and transparent. I maintain open communication throughout each project, ensuring you're involved in every crucial decision while benefiting from my technical expertise and creative insights.
                 </p>
                 <p>
-                  Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et 
-                  dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio nam libero 
-                  tempore cum soluta nobis est eligendi optio.
+                  Quality and attention to detail are non-negotiable in my work. From the initial consultation to final delivery, I'm dedicated to exceeding your expectations and helping your music achieve its full potential.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Stats Section */}
-        <div className="mb-16">
-          <div className="relative inline-block w-full text-center mb-12">
-            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/10 via-cyan-300/20 to-cyan-300/10 rounded-xl blur-lg opacity-50"></div>
-            <h2 className="relative text-3xl font-bold text-white tracking-wide">
-              BY THE NUMBERS
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <Card 
-                key={index}
-                className="bg-gray-900/30 border-cyan-300/20 hover:border-cyan-300/40 transition-all duration-300 hover:scale-105 backdrop-blur-sm group"
-              >
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                <CardContent className="relative p-6 text-center">
-                  <div className="w-12 h-1 bg-gradient-to-r from-cyan-300 to-cyan-500 mx-auto mb-4 rounded-full"></div>
-                  <div className="text-3xl font-bold text-cyan-300 mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-300 font-medium tracking-wide">
-                    {stat.label}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
 
@@ -129,7 +69,7 @@ const About = () => {
           <div className="relative inline-block w-full text-center mb-8">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/10 via-cyan-300/20 to-cyan-300/10 rounded-xl blur-lg opacity-50"></div>
             <h2 className="relative text-3xl font-bold text-white tracking-wide">
-              WHAT WE DO
+              WHAT I DO
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -141,8 +81,7 @@ const About = () => {
                   PROFESSIONAL MIXING
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  I craft balanced, dynamic mixes that bring clarity and life to your individual tracks. Using industry-standard techniques and high-end processing, I ensure every element in your song has its perfect place in the sonic spectrum.
                 </p>
               </CardContent>
             </Card>
@@ -155,8 +94,7 @@ const About = () => {
                   AUDIO MASTERING
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                  The final polish your music deserves. My mastering process enhances your mix with careful EQ, compression, and limiting to achieve commercial loudness while preserving the dynamics and emotional impact of your music.
                 </p>
               </CardContent>
             </Card>
@@ -166,11 +104,10 @@ const About = () => {
               <CardContent className="relative p-6">
                 <div className="w-12 h-1 bg-gradient-to-r from-cyan-300 to-cyan-500 mb-4 rounded-full"></div>
                 <h3 className="text-xl font-semibold text-white mb-3 tracking-wide">
-                  QUALITY ASSURANCE
+                  PERSONALIZED SERVICE
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                  deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
+                  As a solo operation, I provide direct, personal communication throughout your project. You'll work directly with me from start to finish, ensuring your vision is understood and realized with complete artistic integrity.
                 </p>
               </CardContent>
             </Card>
@@ -189,7 +126,7 @@ const About = () => {
                 LET'S WORK TOGETHER
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Ready to take your music to the next level? We're here to help bring your vision to life.
+                Ready to take your music to the next level? I'm here to help bring your vision to life.
               </p>
               <a href="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
