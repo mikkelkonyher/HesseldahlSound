@@ -72,19 +72,16 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="h-6 w-6 text-blue-400" />,
       title: "Email",
       content: "hello@hesseldahlsound.com",
       description: "Send us an email anytime"
     },
     {
-      icon: <MessageSquare className="h-6 w-6 text-blue-400" />,
       title: "Response Time",
       content: "Within 24 hours",
       description: "We'll get back to you quickly"
     },
     {
-      icon: <CheckCircle className="h-6 w-6 text-blue-400" />,
       title: "Free Consultation",
       content: "Available",
       description: "Discuss your project with us"
@@ -92,13 +89,21 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-950 pt-24 pb-16 relative overflow-hidden">
+      {/* Futuristic background effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(95,211,243,0.08),transparent_70%)]"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-300/5 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Get In Touch
-          </h1>
+          <div className="relative inline-block">
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-xl blur-lg opacity-50"></div>
+            <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide">
+              GET IN TOUCH
+            </h1>
+          </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to start your next project? We'd love to hear from you and discuss how we can help bring your music to life.
           </p>
@@ -107,22 +112,23 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="bg-gray-900/50 border-blue-900/30 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl text-white flex items-center gap-2">
-                  <Send className="h-6 w-6 text-blue-400" />
-                  Send us a message
+            <Card className="bg-gray-900/30 border-cyan-300/20 backdrop-blur-sm group hover:border-cyan-300/40 transition-all duration-300">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <CardHeader className="relative">
+                <CardTitle className="text-2xl text-white flex items-center gap-2 tracking-wide">
+                  <div className="w-2 h-2 bg-cyan-300 rounded-full"></div>
+                  SEND US A MESSAGE
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <Label htmlFor="name" className="text-white mb-2 block">
-                        Your Name *
+                      <Label htmlFor="name" className="text-white mb-2 block font-medium tracking-wide">
+                        YOUR NAME *
                       </Label>
                       <div className="relative">
-                        <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                        <User className="absolute left-3 top-3 h-4 w-4 text-cyan-300" />
                         <Input
                           id="name"
                           name="name"
@@ -130,18 +136,18 @@ const Contact = () => {
                           required
                           value={formData.name}
                           onChange={handleInputChange}
-                          className="pl-10 bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500"
+                          className="pl-10 bg-gray-800/30 border-cyan-300/20 text-white placeholder-gray-400 focus:border-cyan-300 focus:ring-cyan-300/20"
                           placeholder="Enter your name"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <Label htmlFor="email" className="text-white mb-2 block">
-                        Email Address *
+                      <Label htmlFor="email" className="text-white mb-2 block font-medium tracking-wide">
+                        EMAIL ADDRESS *
                       </Label>
                       <div className="relative">
-                        <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                        <Mail className="absolute left-3 top-3 h-4 w-4 text-cyan-300" />
                         <Input
                           id="email"
                           name="email"
@@ -149,7 +155,7 @@ const Contact = () => {
                           required
                           value={formData.email}
                           onChange={handleInputChange}
-                          className="pl-10 bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500"
+                          className="pl-10 bg-gray-800/30 border-cyan-300/20 text-white placeholder-gray-400 focus:border-cyan-300 focus:ring-cyan-300/20"
                           placeholder="Enter your email"
                         />
                       </div>
@@ -157,8 +163,8 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="subject" className="text-white mb-2 block">
-                      Subject *
+                    <Label htmlFor="subject" className="text-white mb-2 block font-medium tracking-wide">
+                      SUBJECT *
                     </Label>
                     <Input
                       id="subject"
@@ -167,14 +173,14 @@ const Contact = () => {
                       required
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500"
+                      className="bg-gray-800/30 border-cyan-300/20 text-white placeholder-gray-400 focus:border-cyan-300 focus:ring-cyan-300/20"
                       placeholder="What's this about?"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="message" className="text-white mb-2 block">
-                      Message *
+                    <Label htmlFor="message" className="text-white mb-2 block font-medium tracking-wide">
+                      MESSAGE *
                     </Label>
                     <Textarea
                       id="message"
@@ -183,7 +189,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={6}
-                      className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-blue-500 resize-none"
+                      className="bg-gray-800/30 border-cyan-300/20 text-white placeholder-gray-400 focus:border-cyan-300 focus:ring-cyan-300/20 resize-none"
                       placeholder="Tell us about your project, timeline, and any specific requirements..."
                     />
                   </div>
@@ -191,16 +197,16 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide"
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Sending...
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-gray-900 mr-2"></div>
+                        SENDING...
                       </>
                     ) : (
                       <>
-                        Send Message
+                        SEND MESSAGE
                         <Send className="ml-2 h-4 w-4" />
                       </>
                     )}
@@ -215,16 +221,17 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <Card 
                 key={index}
-                className="bg-gray-900/50 border-blue-900/30 hover:border-blue-500/50 transition-all duration-300 backdrop-blur-sm"
+                className="bg-gray-900/30 border-cyan-300/20 hover:border-cyan-300/40 transition-all duration-300 backdrop-blur-sm group"
               >
-                <CardContent className="p-6">
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <CardContent className="relative p-6">
                   <div className="flex items-start gap-4">
-                    {info.icon}
+                    <div className="w-2 h-2 bg-cyan-300 rounded-full mt-2"></div>
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-1">
+                      <h3 className="text-lg font-semibold text-white mb-1 tracking-wide">
                         {info.title}
                       </h3>
-                      <p className="text-blue-300 font-medium mb-1">
+                      <p className="text-cyan-300 font-medium mb-1">
                         {info.content}
                       </p>
                       <p className="text-gray-400 text-sm">
@@ -237,10 +244,12 @@ const Contact = () => {
             ))}
 
             {/* Additional Information */}
-            <Card className="bg-gray-900/50 border-blue-900/30 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-white mb-3">
-                  What to Include
+            <Card className="bg-gray-900/30 border-cyan-300/20 backdrop-blur-sm group hover:border-cyan-300/40 transition-all duration-300">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <CardContent className="relative p-6">
+                <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2 tracking-wide">
+                  <div className="w-2 h-2 bg-cyan-300 rounded-full"></div>
+                  WHAT TO INCLUDE
                 </h3>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>• Project details and timeline</li>

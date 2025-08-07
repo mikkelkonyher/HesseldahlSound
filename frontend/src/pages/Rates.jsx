@@ -1,13 +1,12 @@
 import React from 'react';
-import { Check, Zap, Headphones, Music } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 
 const Rates = () => {
   const services = [
     {
-      icon: <Headphones className="h-8 w-8 text-blue-400" />,
-      title: "Mixing",
+      title: "MIXING",
       price: "336€",
       priceDKK: "2,500 DKK",
       description: "Professional mixing service with detailed attention to every element of your track",
@@ -22,8 +21,7 @@ const Rates = () => {
       popular: false
     },
     {
-      icon: <Music className="h-8 w-8 text-blue-400" />,
-      title: "Stereo Mastering",
+      title: "STEREO MASTERING",
       price: "67€",
       priceDKK: "500 DKK",
       description: "Professional mastering for your stereo mix to achieve commercial loudness and clarity",
@@ -38,8 +36,7 @@ const Rates = () => {
       popular: true
     },
     {
-      icon: <Zap className="h-8 w-8 text-blue-400" />,
-      title: "Stem Mastering",
+      title: "STEM MASTERING",
       price: "120€",
       priceDKK: "900 DKK",
       description: "Advanced mastering using individual stems for maximum control and sonic impact",
@@ -56,13 +53,21 @@ const Rates = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-950 pt-24 pb-16 relative overflow-hidden">
+      {/* Futuristic background effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(95,211,243,0.08),transparent_70%)]"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-300/5 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our Rates
-          </h1>
+          <div className="relative inline-block">
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-xl blur-lg opacity-50"></div>
+            <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide">
+              OUR RATES
+            </h1>
+          </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Professional audio services with transparent pricing. All rates include VAT and one free revision.
           </p>
@@ -73,30 +78,35 @@ const Rates = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className={`relative bg-gray-900/50 border transition-all duration-300 hover:scale-105 backdrop-blur-sm ${
+              className={`relative bg-gray-900/30 border transition-all duration-500 hover:scale-105 backdrop-blur-sm group overflow-hidden ${
                 service.popular 
-                  ? 'border-blue-500/50 shadow-lg shadow-blue-500/10' 
-                  : 'border-blue-900/30 hover:border-blue-500/50'
+                  ? 'border-cyan-300/40 shadow-lg shadow-cyan-300/10' 
+                  : 'border-cyan-300/20 hover:border-cyan-300/40'
               }`}
             >
+              {/* Glow effect */}
+              <div className={`absolute -inset-1 bg-gradient-to-r blur opacity-0 group-hover:opacity-100 transition duration-500 ${
+                service.popular 
+                  ? 'from-cyan-300/20 via-cyan-500/20 to-cyan-300/20 opacity-50' 
+                  : 'from-cyan-300/10 via-cyan-500/10 to-cyan-300/10'
+              }`} rounded-lg></div>
+
               {/* Popular Badge */}
               {service.popular && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                  <span className="bg-gradient-to-r from-cyan-400 to-cyan-600 text-gray-900 px-4 py-1 rounded-full text-sm font-bold tracking-wide">
+                    MOST POPULAR
                   </span>
                 </div>
               )}
 
-              <CardHeader className="text-center pb-4">
-                <div className="flex justify-center mb-4">
-                  {service.icon}
-                </div>
-                <CardTitle className="text-2xl text-white mb-2">
+              <CardHeader className="relative text-center pb-4">
+                <div className="w-16 h-1 bg-gradient-to-r from-cyan-300 to-cyan-500 mx-auto mb-6 rounded-full"></div>
+                <CardTitle className="text-2xl text-white mb-2 tracking-wide font-bold">
                   {service.title}
                 </CardTitle>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-blue-400">
+                  <span className="text-4xl font-bold text-cyan-300">
                     {service.price}
                   </span>
                   <span className="text-gray-400 ml-2">
@@ -109,24 +119,24 @@ const Rates = () => {
                 </p>
               </CardHeader>
 
-              <CardContent className="pt-0">
+              <CardContent className="relative pt-0">
                 <ul className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                      <Check className="h-5 w-5 text-cyan-300 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-300 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Button 
-                  className={`w-full transition-all duration-300 hover:scale-105 ${
+                  className={`w-full transition-all duration-300 hover:scale-105 font-semibold tracking-wide ${
                     service.popular
-                      ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-blue-500/25'
-                      : 'bg-gray-700 hover:bg-gray-600 text-white'
+                      ? 'bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 shadow-lg hover:shadow-cyan-300/25'
+                      : 'bg-gray-700/50 hover:bg-gray-600/50 text-white border border-cyan-300/20 hover:border-cyan-300/40'
                   }`}
                 >
-                  Get Started
+                  GET STARTED
                 </Button>
               </CardContent>
             </Card>
@@ -135,14 +145,15 @@ const Rates = () => {
 
         {/* Additional Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <Card className="bg-gray-900/50 border-blue-900/30 backdrop-blur-sm">
-            <CardHeader>
-              <CardTitle className="text-white flex items-center gap-2">
-                <Zap className="h-6 w-6 text-blue-400" />
-                Turnaround Time
+          <Card className="bg-gray-900/30 border-cyan-300/20 backdrop-blur-sm group hover:border-cyan-300/40 transition-all duration-300">
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-white flex items-center gap-2 tracking-wide">
+                <div className="w-2 h-2 bg-cyan-300 rounded-full"></div>
+                TURNAROUND TIME
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative">
               <ul className="space-y-2 text-gray-300">
                 <li>• <strong className="text-white">Mixing:</strong> 3-5 business days</li>
                 <li>• <strong className="text-white">Mastering:</strong> 1-2 business days</li>
@@ -152,14 +163,15 @@ const Rates = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-900/50 border-blue-900/30 backdrop-blur-sm">
-            <CardHeader>
-              <CardTitle className="text-white flex items-center gap-2">
-                <Check className="h-6 w-6 text-blue-400" />
-                What's Included
+          <Card className="bg-gray-900/30 border-cyan-300/20 backdrop-blur-sm group hover:border-cyan-300/40 transition-all duration-300">
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-white flex items-center gap-2 tracking-wide">
+                <div className="w-2 h-2 bg-cyan-300 rounded-full"></div>
+                WHAT'S INCLUDED
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative">
               <ul className="space-y-2 text-gray-300">
                 <li>• <strong className="text-white">One free revision</strong> on all services</li>
                 <li>• <strong className="text-white">Multiple formats:</strong> WAV, MP3, FLAC</li>
@@ -172,24 +184,30 @@ const Rates = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-900/20 to-blue-800/20 rounded-2xl p-8 md:p-12 border border-blue-900/30 backdrop-blur-sm">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Ready to Start Your Project?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Get in touch to discuss your specific needs and receive a custom quote
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25">
-                  Contact Us
-                </Button>
-              </a>
-              <a href="/files">
-                <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-950 px-8 py-3 text-lg transition-all duration-300 hover:scale-105">
-                  How to Send Files
-                </Button>
-              </a>
+          <div className="relative bg-gradient-to-r from-gray-900/40 via-gray-900/60 to-gray-900/40 rounded-2xl p-8 md:p-12 border border-cyan-300/20 backdrop-blur-sm overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/5 via-transparent to-cyan-500/5"></div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-300/10 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl"></div>
+            
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold text-white mb-4 tracking-wide">
+                READY TO START YOUR PROJECT?
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Get in touch to discuss your specific needs and receive a custom quote
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact">
+                  <Button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
+                    CONTACT US
+                  </Button>
+                </a>
+                <a href="/files">
+                  <Button variant="outline" className="border-cyan-300 text-cyan-300 hover:bg-cyan-300/10 hover:text-cyan-200 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105">
+                    HOW TO SEND FILES
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
