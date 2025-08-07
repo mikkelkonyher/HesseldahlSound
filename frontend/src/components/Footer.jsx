@@ -30,7 +30,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4 tracking-wide">FOLLOW ME</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://spotify.com" 
+                href="https://open.spotify.com/playlist/5MTlLVDBvhtF5LhuuPBONc?si=acba089214094c84"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110 p-2 rounded-lg hover:bg-cyan-300/5"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Music className="h-5 w-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/hesseldahlsound/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-300 transition-all duration-300 hover:scale-110 p-2 rounded-lg hover:bg-cyan-300/5"
@@ -52,10 +52,10 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-cyan-300/10">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Hesseldahl sound. All rights reserved.
+                © {new Date().getFullYear()} Hesseldahl sound. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
-              Professional mixing & mastering by Mikkel Hesseldahl Konyher
+
             </p>
           </div>
         </div>

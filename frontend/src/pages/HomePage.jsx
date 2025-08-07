@@ -8,16 +8,16 @@ const HomePage = () => {
   const features = [
     {
       title: "Professional Mixing",
-      description: "Industry-standard mixing techniques with personal attention to every detail"
+      description: "Clear, balanced mixes with a personal touch — shaped by your sound and vision."
     },
     {
       title: "Mastering Excellence", 
       description: "Both stereo and stem mastering options for maximum sonic impact"
     },
-    {
-      title: "Quick Turnaround",
-      description: "Professional results delivered efficiently without compromising quality"
-    }
+      {
+          title: "100% Satisfaction Guaranteed",
+          description: "If you're not happy, you don't pay"
+      }
   ];
 
   return (
@@ -43,7 +43,7 @@ const HomePage = () => {
             </div>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Professional audio mixing and mastering that brings your music to life
+                You’ll hear the difference — or you don’t pay.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -113,10 +113,10 @@ const HomePage = () => {
             
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wide">
-                READY TO ELEVATE YOUR SOUND?
+                  Got a track in the works?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Let's discuss your project and bring your music to the next level
+                  Send it over. We’ll figure out what it needs, together.
               </p>
               <Link to="/contact">
                 <Button 
