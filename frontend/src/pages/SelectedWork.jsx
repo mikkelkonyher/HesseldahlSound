@@ -43,21 +43,21 @@ const SelectedWork = () => {
     },
     {
       id: 5,
-      artist: "Azure Skyline",
-      album: "Urban Echoes",
-      year: "2023",
-      genre: "Hip-Hop",
+      artist: "Simon Glöde",
+      album: "Everything In It's Time",
+      year: "2025",
+      genre: "Indie Folk",
       image: "/assets/1200x630bb.jpg",
-      description: "Contemporary hip-hop with jazz-influenced samples"
+        description: "EP by globe-trotting singer-songwriter Simon Glöde, featuring tracks recorded across several countries. Includes 'Everything In It's Time', 'Home', 'Calm In The Mountains' and an instrumental version of the title track. Credits: Mix and mastering."
     },
     {
       id: 6,
-      artist: "Voltage Theory",
-      album: "Electric Dreams",
+      artist: "Soulfried",
+      album: "Chonk Lé Fonk",
       year: "2024",
-      genre: "Electronic Rock",
-      image: "https://images.unsplash.com/photo-1574684891174-df6b02ab38d7?w=400&h=400&fit=crop&crop=entropy&auto=format&fm=jpg&q=60",
-      description: "High-energy fusion of electronic and rock elements"
+      genre: "Funk/Jazz Fusion",
+      image: "/assets/ab67616d0000b273b75c925bf321fef953a592da.jpeg",
+        description: "Album by Copenhagen‑based funk‑jazz collective SoulFried. Released February 16, 2024, featuring six tracks including “Sexy Coffee Pot”, “Dim Sum”, and the title track. Credits: Mix and mastering."
     }
   ];
 
