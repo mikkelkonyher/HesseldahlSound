@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../components/ui/card';
 
 const About = () => {
@@ -147,11 +148,11 @@ const About = () => {
               <p className="text-xl text-gray-300 mb-8">
                   Got a project in the works? I’m available for mixing, mastering or just a chat about your sound.
               </p>
-              <a href="/contact">
+              <Link to="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
                   GET IN TOUCH
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
