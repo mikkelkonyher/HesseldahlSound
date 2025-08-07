@@ -254,9 +254,8 @@ const Contact = () => {
                 </h3>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>• Project details and timeline</li>
-                  <li>• Genre and style preferences</li>
-                  <li>• Reference tracks (if any)</li>
-                  <li>• Budget and service requirements</li>
+                    <li>• Reference tracks (if any)</li>
+                  <li>• Service requirements</li>
                   <li>• File sharing link (if ready)</li>
                 </ul>
               </CardContent>

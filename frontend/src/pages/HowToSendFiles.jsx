@@ -33,7 +33,6 @@ const HowToSendFiles = () => {
       description: "Provide detailed information about your project, including genre, reference tracks, and any specific requests or concerns.",
       details: [
         "Song title and artist name",
-        "Genre and style",
         "Reference tracks you like",
         "Specific mixing notes or requests"
       ]
