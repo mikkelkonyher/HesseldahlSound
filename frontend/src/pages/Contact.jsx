@@ -30,10 +30,22 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate EmailJS integration - replace with actual EmailJS code
     try {
-      // This is where EmailJS would be integrated
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate API call
+      // EmailJS configuration - Replace with your actual service details
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'hello@hesseldahlsound.com'
+      };
+
+      // Replace these with your actual EmailJS credentials
+      const serviceId = 'YOUR_SERVICE_ID';
+      const templateId = 'YOUR_TEMPLATE_ID';
+      const publicKey = 'YOUR_PUBLIC_KEY';
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       toast({
         title: "Message sent successfully!",
@@ -50,7 +62,7 @@ const Contact = () => {
     } catch (error) {
       toast({
         title: "Error sending message",
-        description: "Please try again later.",
+        description: "Please try again later or email us directly.",
         variant: "destructive"
       });
     } finally {
