@@ -1,10 +1,12 @@
-# Hesseldahl Sound - Audio Mixing & Mastering Website
+# Hesseldahl sound - Audio Mixing & Mastering Website
 
-A modern, dark-themed React website for Hesseldahl Sound's professional audio mixing and mastering services.
+A modern, dark-themed React website for Mikkel Hesseldahl Konyher's professional audio mixing and mastering services. This is a personal, one-man business website written in first-person perspective.
 
 ## Features
 
-- **Modern Design**: Dark, futuristic, and minimalistic with vibrant blue color scheme
+- **Modern Design**: Dark, futuristic, and minimalistic with cyan color scheme (#5fd3f3)
+- **Personal Touch**: First-person content reflecting solo operation by Mikkel Hesseldahl Konyher
+- **Professional Branding**: Clean "Hesseldahl sound" branding (only first word capitalized)
 - **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - **Modular Components**: Reusable React components built with Tailwind CSS
 - **Interactive Elements**: Hover effects, transitions, and modern UI interactions
@@ -12,12 +14,20 @@ A modern, dark-themed React website for Hesseldahl Sound's professional audio mi
 
 ## Pages
 
-- **Homepage**: Hero section with brand identity and service highlights
+- **Homepage**: Hero section with personal brand identity and service highlights
 - **Selected Work**: Portfolio grid showcasing 6 featured projects with hover effects
 - **How to Send Files**: Step-by-step guide for client file submissions
-- **Rates**: Professional pricing cards with Euro and DKK pricing
-- **About**: Company story and philosophy with lorem ipsum content
+- **Rates**: Professional pricing cards with Euro and DKK pricing (no "Most Popular" labels)
+- **About**: Personal story of Mikkel Hesseldahl Konyher with professional content
 - **Contact**: Contact form integrated with EmailJS
+
+## Content Approach
+
+All content is written from Mikkel's first-person perspective:
+- Uses "I" instead of "we" or "Hesseldahl sound"
+- Emphasizes personal, direct service
+- Communicates solo operation professionally
+- Maintains professional tone while being personal
 
 ## EmailJS Setup Instructions
 
