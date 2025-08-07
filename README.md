@@ -73,13 +73,14 @@ All services include one free revision.
 
 ## Design Guidelines Followed
 
-- Dark, futuristic, modern aesthetic
-- Vibrant blue color scheme (#3b82f6, #2563eb)
-- No prohibited dark gradients or AI emojis
-- Lucide React icons only
+- Dark, futuristic, modern aesthetic with light effects
+- Cyan color scheme (#5fd3f3, #22d3ee) for professional appearance
+- Minimal icon usage for clean, professional look
+- No sound icon in logo - clean text-based branding
+- Futuristic glow effects and background elements
 - Modular, reusable components
 - Responsive design with hover effects
-- Professional typography and spacing
+- Professional typography with wide tracking
 
 ## Running the Application
 
