@@ -126,6 +126,7 @@ sudo supervisorctl restart frontend
 - **Email**: hello@hesseldahlsound.com
 - **Response Time**: Within 24 hours
 - **Social**: Spotify and Instagram links included in footer
+- **Owner**: Mikkel Hesseldahl Konyher (solo operation)
 
 ---
 
