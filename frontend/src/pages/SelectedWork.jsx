@@ -63,13 +63,21 @@ const SelectedWork = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-950 pt-24 pb-16 relative overflow-hidden">
+      {/* Futuristic background effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(95,211,243,0.08),transparent_70%)]"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-300/5 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Selected Work
-          </h1>
+          <div className="relative inline-block">
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-xl blur-lg opacity-50"></div>
+            <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide">
+              SELECTED WORK
+            </h1>
+          </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Discover some of our recent projects and hear the difference professional mixing and mastering makes
           </p>
@@ -80,10 +88,13 @@ const SelectedWork = () => {
           {projects.map((project) => (
             <Card 
               key={project.id}
-              className="bg-gray-900/50 border-blue-900/30 hover:border-blue-500/50 transition-all duration-500 hover:scale-105 backdrop-blur-sm overflow-hidden group cursor-pointer"
+              className="bg-gray-900/30 border-cyan-300/20 hover:border-cyan-300/40 transition-all duration-500 hover:scale-105 backdrop-blur-sm overflow-hidden group cursor-pointer"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              
               <div className="relative">
                 <img 
                   src={project.image}
@@ -96,17 +107,17 @@ const SelectedWork = () => {
                   hoveredProject === project.id ? 'opacity-90' : 'opacity-60'
                 }`}>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-lg font-semibold text-white mb-1">
+                    <h3 className="text-lg font-semibold text-white mb-1 tracking-wide">
                       {project.artist}
                     </h3>
-                    <p className="text-blue-300 font-medium mb-1">
+                    <p className="text-cyan-300 font-medium mb-1">
                       {project.album}
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-gray-300">
                         {project.year}
                       </span>
-                      <span className="text-sm text-blue-400 bg-blue-900/30 px-2 py-1 rounded">
+                      <span className="text-sm text-cyan-300 bg-cyan-300/10 px-2 py-1 rounded border border-cyan-300/20">
                         {project.genre}
                       </span>
                     </div>
@@ -117,10 +128,10 @@ const SelectedWork = () => {
                     hoveredProject === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
                   }`}>
                     <div className="flex space-x-2">
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors duration-300">
+                      <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 p-2 rounded-full transition-all duration-300 hover:scale-110">
                         <Play className="h-4 w-4" />
                       </button>
-                      <button className="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full transition-colors duration-300">
+                      <button className="bg-gray-700/80 hover:bg-gray-600/80 text-white p-2 rounded-full transition-all duration-300 hover:scale-110 border border-cyan-300/20">
                         <ExternalLink className="h-4 w-4" />
                       </button>
                     </div>
@@ -128,7 +139,7 @@ const SelectedWork = () => {
                 </div>
               </div>
 
-              <CardContent className="p-6">
+              <CardContent className="relative p-6 bg-gray-900/20 border-t border-cyan-300/10">
                 <p className="text-gray-400 text-sm leading-relaxed">
                   {project.description}
                 </p>
@@ -139,14 +150,22 @@ const SelectedWork = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <p className="text-gray-300 mb-6">
-            Want to hear your music at this level?
-          </p>
-          <a href="/contact">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25">
-              Start Your Project
-            </button>
-          </a>
+          <div className="relative bg-gradient-to-r from-gray-900/40 via-gray-900/60 to-gray-900/40 rounded-2xl p-8 md:p-12 border border-cyan-300/20 backdrop-blur-sm overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/5 via-transparent to-cyan-500/5"></div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-cyan-300/10 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl"></div>
+            
+            <div className="relative z-10">
+              <p className="text-gray-300 mb-6 tracking-wide">
+                Want to hear your music at this level?
+              </p>
+              <a href="/contact">
+                <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
+                  START YOUR PROJECT
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
