@@ -176,16 +176,16 @@ const Rates = () => {
                 Get in touch to discuss your specific needs and receive a custom quote
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact">
+                <Link to="/contact">
                   <Button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
                     CONTACT ME
                   </Button>
-                </a>
-                <a href="/files">
+                </Link>
+                <Link to="/files">
                   <Button variant="outline" className="border-cyan-300 text-cyan-300 hover:bg-cyan-300/10 hover:text-cyan-200 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105">
                     HOW TO SEND FILES
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
