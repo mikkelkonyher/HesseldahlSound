@@ -19,7 +19,7 @@ const About = () => {
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Professional audio engineering services that bring your musical vision to life
+              Audio engineer specialising in mixing and mastering. Focused on clarity, depth and translating the artist’s intent across formats.
           </p>
         </div>
 
@@ -28,40 +28,40 @@ const About = () => {
           <div className="relative mb-8">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 to-cyan-500/20 rounded-full blur-lg opacity-50"></div>
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-cyan-300/30 bg-gray-900/50 backdrop-blur-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&fm=jpg&q=60" 
-                alt="Mikkel Hesseldahl Konyher - Audio Engineer"
-                className="w-full h-full object-cover"
-              />
+                <img
+                    src="/assets/mikkel.jpg"
+                    alt="Mikkel Hesseldahl Konyher - Audio Engineer"
+                    className="w-full h-full object-cover"
+                />
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/20 to-transparent"></div>
             </div>
           </div>
           <div className="text-center">
             <h2 className="text-2xl font-bold text-white mb-2 tracking-wide">Mikkel Hesseldahl Konyher</h2>
-            <p className="text-cyan-300 font-medium">Audio Engineer & Producer</p>
+              <p className="text-cyan-300 font-medium">Mix and Mastering Engineer</p>
           </div>
         </div>
 
-        {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* Story Section */}
-          <div className="relative">
-            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-xl blur-lg opacity-30"></div>
-            <div className="relative bg-gray-900/20 p-8 rounded-xl border border-cyan-300/10 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">MY STORY</h2>
-              <div className="space-y-4 text-gray-300 leading-relaxed">
-                <p>
-                  My passion for audio engineering began years ago when I first discovered the transformative power of professional mixing and mastering. What started as curiosity evolved into a dedicated craft, where I've honed my skills to deliver exceptional sonic experiences for artists across genres.
-                </p>
-                <p>
-                  Working from my professionally treated studio, I focus on bringing out the unique character and emotion in every track I work with. My approach combines technical precision with creative intuition, ensuring that each project receives the individual attention it deserves.
-                </p>
-                <p>
-                  I believe that great audio production is not just about technical perfection—it's about understanding the artist's vision and translating that into a sound that connects with listeners on a deeper level.
-                </p>
+          {/* Main Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              {/* Story Section */}
+              <div className="relative">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/5 via-cyan-500/5 to-cyan-300/5 rounded-xl blur-lg opacity-30"></div>
+                  <div className="relative bg-gray-900/20 p-8 rounded-xl border border-cyan-300/10 backdrop-blur-sm">
+                      <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">MY STORY</h2>
+                      <div className="space-y-4 text-gray-300 leading-relaxed">
+                          <p>
+                              I’ve been drawn to sound since I was a kid—tweaking, recording, exploring what makes music feel alive. That early curiosity led me to the Rhythmic Music Conservatory in Copenhagen, where I completed both a Bachelor (2011–2014) and a Master of Music (2014–2016).
+                          </p>
+                          <p>
+                              Alongside my studies, I played in various bands and projects, always balancing performance with a growing fascination for sound itself. Over time, audio engineering became the natural meeting point—where musical intuition meets technical work.
+                          </p>
+                          <p>
+                              Today, I work from my own studio, helping artists shape their sound through careful mixing and mastering. I’m interested in detail, dynamics, and in bringing out what’s already there—making the music speak clearly, without overcomplicating it.
+                          </p>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
 
           {/* Philosophy Section */}
           <div className="relative">
@@ -70,13 +70,13 @@ const About = () => {
               <h2 className="text-3xl font-bold text-white mb-6 tracking-wide">MY PHILOSOPHY</h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Every project that comes through my studio doors is treated with the same level of dedication and care. I understand that your music represents countless hours of creativity and emotion, and I'm committed to honoring that investment with professional results.
+                    Less really is more—no matter how cliché it sounds. I aim for clarity, depth and character by focusing on what actually matters in a mix. Instead of piling on effects, I try to bring out the strength of the performance itself. Sometimes, the best decision is to remove something rather than add more. It’s about finding the core of the song and letting that breathe.
                 </p>
                 <p>
-                  My process is collaborative and transparent. I maintain open communication throughout each project, ensuring you're involved in every crucial decision while benefiting from my technical expertise and creative insights.
+                    I also believe that good communication is just as important as technical skills. Taking time to understand the artist’s vision, asking the right questions, and staying open during the process often makes the biggest difference. Every project is different, and I try to meet it on its own terms—with ears, curiosity and respect for the music.
                 </p>
                 <p>
-                  Quality and attention to detail are non-negotiable in my work. From the initial consultation to final delivery, I'm dedicated to exceeding your expectations and helping your music achieve its full potential.
+                  Quality and attention to detail are non-negotiable in my work.
                 </p>
               </div>
             </div>
@@ -142,10 +142,10 @@ const About = () => {
             
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4 tracking-wide">
-                LET'S WORK TOGETHER
+                  Let’s work together
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Ready to take your music to the next level? I'm here to help bring your vision to life.
+                  Got a project in the works? I’m available for mixing, mastering or just a chat about your sound.
               </p>
               <a href="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
