@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-cyan-300/5 to-transparent pointer-events-none"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand Section */}
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" className="group relative mb-4">
@@ -23,28 +23,6 @@ const Footer = () => {
             <p className="text-gray-400 text-center md:text-left text-sm max-w-xs leading-relaxed">
               Professional audio mixing and mastering services by Mikkel Hesseldahl Konyher.
             </p>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-white font-semibold mb-4 tracking-wide">QUICK LINKS</h3>
-            <div className="flex flex-col space-y-2">
-              <Link to="/work" className="text-gray-400 hover:text-cyan-300 transition-colors duration-300 text-sm">
-                Selected Work
-              </Link>
-              <Link to="/rates" className="text-gray-400 hover:text-cyan-300 transition-colors duration-300 text-sm">
-                Rates
-              </Link>
-              <Link to="/files" className="text-gray-400 hover:text-cyan-300 transition-colors duration-300 text-sm">
-                How to Send Files
-              </Link>
-              <Link to="/about" className="text-gray-400 hover:text-cyan-300 transition-colors duration-300 text-sm">
-                About
-              </Link>
-              <Link to="/contact" className="text-gray-400 hover:text-cyan-300 transition-colors duration-300 text-sm">
-                Contact
-              </Link>
-            </div>
           </div>
 
           {/* Social Links */}
