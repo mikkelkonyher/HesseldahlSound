@@ -110,13 +110,13 @@ const Rates = () => {
                   ))}
                 </ul>
 
-                <a href="/files">
+                <Link to="/files">
                   <Button 
                     className="w-full transition-all duration-300 hover:scale-105 font-semibold tracking-wide bg-gray-700/50 hover:bg-gray-600/50 text-white border border-cyan-300/20 hover:border-cyan-300/40"
                   >
                     GET STARTED
                   </Button>
-                </a>
+                </Link>
               </CardContent>
             </Card>
           ))}
