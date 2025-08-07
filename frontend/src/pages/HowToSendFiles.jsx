@@ -20,9 +20,9 @@ const HowToSendFiles = () => {
       title: "UPLOAD VIA CLOUD SERVICE",
       description: "Use services like Google Drive, Dropbox, or WeTransfer to share your files. Make sure the link is accessible and won't expire.",
       details: [
-        "Google Drive (preferred)",
+        "Google Drive ",
         "Dropbox or OneDrive",
-        "WeTransfer for larger files", 
+        "WeTransfer",
         "Set sharing permissions correctly"
       ]
     },
@@ -32,7 +32,7 @@ const HowToSendFiles = () => {
       description: "Provide detailed information about your project, including genre, reference tracks, and any specific requests or concerns.",
       details: [
         "Song title and artist name",
-        "Genre and target audience",
+        "Genre and style",
         "Reference tracks you like",
         "Specific mixing notes or requests"
       ]
@@ -65,7 +65,7 @@ const HowToSendFiles = () => {
     },
     {
       format: "44.1KHZ+",
-      description: "Sample rate (higher is better)"
+        description: "Sample rate you recorded at (e.g. 44.1kHz or higher)"
     }
   ];
 
@@ -171,10 +171,10 @@ const HowToSendFiles = () => {
             
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4 tracking-wide">
-                READY TO GET STARTED?
+                  Thinking about working together?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Have your files ready? Send them my way and let's create something amazing together.
+                  Feel free to send your stems when you’re ready — we’ll take it from there.
               </p>
               <a href="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">

@@ -142,7 +142,7 @@ const SelectedWork = () => {
             
             <div className="relative z-10">
               <p className="text-gray-300 mb-6 tracking-wide">
-                Want to hear your music at this level?
+                  Interested in a fresh take on your tracks?
               </p>
               <a href="/contact">
                 <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 rounded-lg font-semibold tracking-wide transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">

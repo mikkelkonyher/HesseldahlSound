@@ -29,7 +29,7 @@ const Rates = () => {
         "Stereo mastering from your final mix",
         "EQ and compression optimization",
         "Loudness and dynamics control",
-        "One free revision included",
+        "Free revisions included",
         "Multiple format delivery",
         "All prices include VAT"
       ]
@@ -43,7 +43,7 @@ const Rates = () => {
         "Mastering from grouped stems",
         "Individual stem processing",
         "Enhanced dynamic control",
-        "One free revision included",
+          "Free revisions included",
         "Premium sonic quality",
         "All prices include VAT"
       ]
@@ -67,7 +67,7 @@ const Rates = () => {
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Professional audio services with transparent pricing. All rates include VAT and one free revision.
+            Professional audio services with transparent pricing. All rates include VAT and free revisions.
           </p>
         </div>
 
@@ -152,7 +152,7 @@ const Rates = () => {
             </CardHeader>
             <CardContent className="relative">
               <ul className="space-y-2 text-gray-300">
-                <li>• <strong className="text-white">One free revision</strong> on all services</li>
+                <li>• <strong className="text-white">Free revisions</strong> on all services</li>
                 <li>• <strong className="text-white">Multiple formats:</strong> WAV, MP3, FLAC</li>
                 <li>• <strong className="text-white">Professional quality</strong> guaranteed</li>
                 <li>• <strong className="text-white">Direct communication</strong> throughout process</li>
@@ -170,7 +170,7 @@ const Rates = () => {
             
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4 tracking-wide">
-                READY TO START YOUR PROJECT?
+                  Ready to start your project?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
                 Get in touch to discuss your specific needs and receive a custom quote
