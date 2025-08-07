@@ -94,31 +94,42 @@ All services include one free revision.
 
 ## Running the Application
 
-The application is already running on `http://localhost:3000` with hot reload enabled.
+The application can be started in several ways:
 
-To restart if needed:
+### Command Line
 ```bash
-sudo supervisorctl restart frontend
+cd frontend
+yarn start
 ```
+
+### IDE (JetBrains)
+Simply press the play button in your IDE to run the application. Two run configurations are available:
+- **yarn start** (recommended)
+- **npm start**
+
+Both methods will run the application on `http://localhost:3000` with hot reload enabled.
 
 ## Project Structure
 
 ```
-/app/frontend/src/
-├── components/
-│   ├── ui/                 # Shadcn/ui components
-│   ├── Navigation.jsx      # Main navigation component
-│   └── Footer.jsx          # Site footer
-├── pages/
-│   ├── HomePage.jsx        # Landing page
-│   ├── SelectedWork.jsx    # Portfolio showcase
-│   ├── HowToSendFiles.jsx  # File submission guide
-│   ├── Rates.jsx           # Pricing information
-│   ├── About.jsx           # Company information
-│   └── Contact.jsx         # Contact form
-├── hooks/
-│   └── use-toast.js        # Toast notification hook
-└── App.js                  # Main app component with routing
+/frontend/
+├── src/
+│   ├── components/
+│   │   ├── ui/                 # Shadcn/ui components
+│   │   ├── Navigation.jsx      # Main navigation component
+│   │   └── Footer.jsx          # Site footer
+│   ├── pages/
+│   │   ├── HomePage.jsx        # Landing page
+│   │   ├── SelectedWork.jsx    # Portfolio showcase
+│   │   ├── HowToSendFiles.jsx  # File submission guide
+│   │   ├── Rates.jsx           # Pricing information
+│   │   ├── About.jsx           # Company information
+│   │   └── Contact.jsx         # Contact form
+│   ├── hooks/
+│   │   └── use-toast.js        # Toast notification hook
+│   └── App.js                  # Main app component with routing
+├── public/                     # Public assets
+└── package.json                # Project dependencies and scripts
 ```
 
 ## Contact Information
@@ -130,4 +141,4 @@ sudo supervisorctl restart frontend
 
 ---
 
-**Note**: This is a frontend-only implementation. No backend server or database is required.
+**Note**: This is a frontend-only implementation. The application is built with React and requires no backend server or database.
