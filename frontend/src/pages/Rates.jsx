@@ -17,8 +17,7 @@ const Rates = () => {
         "One free revision included",
         "High-quality WAV delivery",
         "All prices include VAT"
-      ],
-      popular: false
+      ]
     },
     {
       title: "STEREO MASTERING",
@@ -32,8 +31,7 @@ const Rates = () => {
         "One free revision included",
         "Multiple format delivery",
         "All prices include VAT"
-      ],
-      popular: true
+      ]
     },
     {
       title: "STEM MASTERING",
@@ -47,8 +45,7 @@ const Rates = () => {
         "One free revision included",
         "Premium sonic quality",
         "All prices include VAT"
-      ],
-      popular: false
+      ]
     }
   ];
 
@@ -65,7 +62,7 @@ const Rates = () => {
           <div className="relative inline-block">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-xl blur-lg opacity-50"></div>
             <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide">
-              OUR RATES
+              MY RATES
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -78,27 +75,10 @@ const Rates = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className={`relative bg-gray-900/30 border transition-all duration-500 hover:scale-105 backdrop-blur-sm group overflow-hidden ${
-                service.popular 
-                  ? 'border-cyan-300/40 shadow-lg shadow-cyan-300/10' 
-                  : 'border-cyan-300/20 hover:border-cyan-300/40'
-              }`}
+              className="relative bg-gray-900/30 border-cyan-300/20 hover:border-cyan-300/40 transition-all duration-500 hover:scale-105 backdrop-blur-sm group overflow-hidden"
             >
               {/* Glow effect */}
-              <div className={`absolute -inset-1 bg-gradient-to-r blur opacity-0 group-hover:opacity-100 transition duration-500 ${
-                service.popular 
-                  ? 'from-cyan-300/20 via-cyan-500/20 to-cyan-300/20 opacity-50' 
-                  : 'from-cyan-300/10 via-cyan-500/10 to-cyan-300/10'
-              }`} rounded-lg></div>
-
-              {/* Popular Badge */}
-              {service.popular && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                  <span className="bg-gradient-to-r from-cyan-400 to-cyan-600 text-gray-900 px-4 py-1 rounded-full text-sm font-bold tracking-wide">
-                    MOST POPULAR
-                  </span>
-                </div>
-              )}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/10 via-cyan-500/10 to-cyan-300/10 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
               <CardHeader className="relative text-center pb-4">
                 <div className="w-16 h-1 bg-gradient-to-r from-cyan-300 to-cyan-500 mx-auto mb-6 rounded-full"></div>
@@ -130,11 +110,7 @@ const Rates = () => {
                 </ul>
 
                 <Button 
-                  className={`w-full transition-all duration-300 hover:scale-105 font-semibold tracking-wide ${
-                    service.popular
-                      ? 'bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 shadow-lg hover:shadow-cyan-300/25'
-                      : 'bg-gray-700/50 hover:bg-gray-600/50 text-white border border-cyan-300/20 hover:border-cyan-300/40'
-                  }`}
+                  className="w-full transition-all duration-300 hover:scale-105 font-semibold tracking-wide bg-gray-700/50 hover:bg-gray-600/50 text-white border border-cyan-300/20 hover:border-cyan-300/40"
                 >
                   GET STARTED
                 </Button>
@@ -199,7 +175,7 @@ const Rates = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/contact">
                   <Button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25">
-                    CONTACT US
+                    CONTACT ME
                   </Button>
                 </a>
                 <a href="/files">

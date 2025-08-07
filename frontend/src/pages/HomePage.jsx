@@ -8,7 +8,7 @@ const HomePage = () => {
   const features = [
     {
       title: "Professional Mixing",
-      description: "Industry-standard mixing techniques with attention to every detail"
+      description: "Industry-standard mixing techniques with personal attention to every detail"
     },
     {
       title: "Mastering Excellence", 
@@ -35,9 +35,9 @@ const HomePage = () => {
             <div className="relative inline-block">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-300/20 via-cyan-300/30 to-cyan-300/20 rounded-2xl blur-xl opacity-50 animate-pulse"></div>
               <h1 className="relative text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
-                <span className="block">HESSELDAHL</span>
+                <span className="block">Hesseldahl</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500">
-                  SOUND
+                  sound
                 </span>
               </h1>
             </div>
@@ -53,7 +53,7 @@ const HomePage = () => {
                   className="relative bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-300/25 border-0"
                 >
                   <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/50 to-cyan-500/50 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-                  <span className="relative">VIEW OUR WORK</span>
+                  <span className="relative">VIEW MY WORK</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -77,7 +77,7 @@ const HomePage = () => {
           <div className="relative inline-block w-full text-center mb-12">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-300/10 via-cyan-300/20 to-cyan-300/10 rounded-xl blur-lg opacity-50"></div>
             <h2 className="relative text-3xl md:text-4xl font-bold text-white tracking-wide">
-              WHY CHOOSE HESSELDAHL SOUND?
+              WHY CHOOSE MY SERVICES?
             </h2>
           </div>
           

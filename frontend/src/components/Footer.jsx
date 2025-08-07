@@ -16,12 +16,12 @@ const Footer = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/20 to-cyan-500/20 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
               <div className="relative bg-gray-950 px-4 py-2 rounded-lg border border-cyan-300/20">
                 <span className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors duration-300 tracking-wide">
-                  HESSELDAHL SOUND
+                  Hesseldahl sound
                 </span>
               </div>
             </Link>
             <p className="text-gray-400 text-center md:text-left text-sm max-w-xs leading-relaxed">
-              Professional audio mixing and mastering services for artists worldwide.
+              Professional audio mixing and mastering services by Mikkel Hesseldahl Konyher.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex flex-col items-center md:items-end">
-            <h3 className="text-white font-semibold mb-4 tracking-wide">FOLLOW US</h3>
+            <h3 className="text-white font-semibold mb-4 tracking-wide">FOLLOW ME</h3>
             <div className="flex space-x-4">
               <a 
                 href="https://spotify.com" 
@@ -74,10 +74,10 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-cyan-300/10">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Hesseldahl Sound. All rights reserved.
+              © 2025 Hesseldahl sound. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
-              Professional mixing & mastering services
+              Professional mixing & mastering by Mikkel Hesseldahl Konyher
             </p>
           </div>
         </div>

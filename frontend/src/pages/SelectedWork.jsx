@@ -79,7 +79,7 @@ const SelectedWork = () => {
             </h1>
           </div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover some of our recent projects and hear the difference professional mixing and mastering makes
+            Discover some of my recent projects and hear the difference professional mixing and mastering makes
           </p>
         </div>
 

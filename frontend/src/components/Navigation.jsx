@@ -25,7 +25,7 @@ const Navigation = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300/20 to-cyan-500/20 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
             <div className="relative bg-gray-950 px-4 py-2 rounded-lg border border-cyan-300/20">
               <span className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors duration-300 tracking-wide">
-                HESSELDAHL SOUND
+                Hesseldahl sound
               </span>
             </div>
           </Link>
