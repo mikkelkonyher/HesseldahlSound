@@ -32,18 +32,19 @@ const Contact = () => {
 
     try {
       // EmailJS configuration - Replace with your actual service details
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        to_email: 'hello@hesseldahlsound.com'
-      };
+        const templateParams = {
+            name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            time: new Date().toLocaleString(), // f.eks. "7/8/2025, 10:37:00"
+            to_email: 'mikkel@hesseldahlsound.com'
+        };
 
       // Replace these with your actual EmailJS credentials
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+        const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
@@ -73,7 +74,7 @@ const Contact = () => {
   const contactInfo = [
     {
       title: "Email",
-      content: "hello@hesseldahlsound.com",
+      content: "mikkel@hesseldahlsound.com",
       description: "Send me an email anytime"
     },
     {
