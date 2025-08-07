@@ -15,7 +15,7 @@ const Rates = () => {
         "Complete mix from individual stems",
         "EQ, compression, and effects processing",
         "Stereo imaging and spatial enhancement",
-        "One free revision included",
+        "Free revisions included",
         "High-quality WAV delivery",
         "All prices include VAT"
       ]
