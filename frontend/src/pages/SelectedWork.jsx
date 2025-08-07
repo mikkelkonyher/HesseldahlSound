@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Play, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 
 const SelectedWork = () => {
@@ -120,20 +119,6 @@ const SelectedWork = () => {
                       <span className="text-sm text-cyan-300 bg-cyan-300/10 px-2 py-1 rounded border border-cyan-300/20">
                         {project.genre}
                       </span>
-                    </div>
-                  </div>
-                  
-                  {/* Hover Actions */}
-                  <div className={`absolute top-4 right-4 transition-all duration-300 ${
-                    hoveredProject === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-                  }`}>
-                    <div className="flex space-x-2">
-                      <button className="bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-300 hover:to-cyan-500 text-gray-900 p-2 rounded-full transition-all duration-300 hover:scale-110">
-                        <Play className="h-4 w-4" />
-                      </button>
-                      <button className="bg-gray-700/80 hover:bg-gray-600/80 text-white p-2 rounded-full transition-all duration-300 hover:scale-110 border border-cyan-300/20">
-                        <ExternalLink className="h-4 w-4" />
-                      </button>
                     </div>
                   </div>
                 </div>
